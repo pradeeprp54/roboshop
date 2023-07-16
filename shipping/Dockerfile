@@ -5,7 +5,7 @@ FROM debian:10 AS build
 
 #RUN apt-get update -y && apt-get -y install maven
 RUN apt-get update -y
-RUN apt-get -y install maven
+RUN apt-get install maven -y
 WORKDIR /opt/shipping
 
 COPY pom.xml /opt/shipping/
